@@ -13,7 +13,7 @@ int main( )
    if (myfile)
    {
      myfile.write(reinterpret_cast<char *>(&a),sizeof(a))
-     mfile.write(reinterpret_cast<char *>(&b), sizeof(b))
+     myfile.write(reinterpret_cast<char *>(&b), sizeof(b))
      myfile.write(reinterpret_cast<char *>(&c), sizeof(c))
      cout<<endl<<endl;
    }else
