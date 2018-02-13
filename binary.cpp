@@ -12,9 +12,9 @@ int main( )
    ofstream myfile {"abc.bin", ios::binary};
    if (myfile)
    {
-     myfile.write(reinterpret_cast<char *>(&a),sizeof(a))
-     myfile.write(reinterpret_cast<char *>(&b), sizeof(b))
-     myfile.write(reinterpret_cast<char *>(&c), sizeof(c))
+     myfile.write(reinterpret_cast<char *>(&a),sizeof(a));
+     myfile.write(reinterpret_cast<char *>(&b), sizeof(b));
+     myfile.write(reinterpret_cast<char *>(&c), sizeof(c));
      cout<<endl<<endl;
    }else
       cout<<"Error opening abc.bin";
